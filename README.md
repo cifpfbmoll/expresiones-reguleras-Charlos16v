@@ -1,14 +1,29 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# romansGoHome
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+Small Java application in charge of convert a valid Roman Numeral numeral into a Decimal Number.
 
-### Setup command
-N/A
+Using Enum Types and Regular Expressions, made it with good practices like TDD, DDD, SOLID... project builded with Maven.
 
-### Run command
-`gradle test`
+![Example of the App](https://github.com/Charlos16v/romansGoHome/blob/master/romansGoHome.gif?raw=true)
 
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+## RomanNumerals Numeration explanation:
+
+| Symbol | Value |
+|--------|-------|
+| I      | 1     |
+| IV     | 4     |
+| V      | 5     |
+| IX     | 9     |
+| X      | 10    |
+| XL     | 40    |
+| L      | 50    |
+| XC     | 90    |
+| C      | 100   |
+| CD     | 400   |
+| D      | 500   |
+| CM     | 900   |
+| M      | 1000  |
+
+- I placed before V or X indicates one less, so four is IV (one less than 5) and 9 is IX (one less than 10).
+- X placed before L or C indicates ten less, so forty is XL (10 less than 50) and 90 is XC (ten less than a hundred).
+- C placed before D or M indicates a hundred less, so four hundred is CD (a hundred less than five hundred) and nine hundred is CM (a hundred less than a thousand).
